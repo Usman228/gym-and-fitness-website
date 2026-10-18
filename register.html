@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FitZone Gym - Register</title>
+</head>
+<body>
+
+    <h1>Gym Membership Registration</h1>
+
+    <a href="index.html">Home</a> |
+    <a href="media.html">Media and Info</a> |
+    <a href="register.html">Register</a>
+
+    <hr>
+
+    <h2>Join Our Gym</h2>
+
+    <form action="#" method="get">
+
+        <label for="name">Full Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="3"
+            maxlength="30"
+        >
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="6"
+            maxlength="20"
+        >
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+        >
+        <br><br>
+
+        <label for="date">Date of Birth:</label>
+        <input
+            type="date"
+            id="date"
+            name="date"
+            required
+        >
+        <br><br>
+
+        <label for="website">Website URL:</label>
+        <input
+            type="url"
+            id="website"
+            name="website"
+        >
+        <br><br>
+
+        <label for="color">Favorite Color:</label>
+        <input
+            type="color"
+            id="color"
+            name="color"
+            value="#ff0000"
+        >
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input
+            type="number"
+            id="age"
+            name="age"
+            min="16"
+            max="80"
+            required
+        >
+        <br><br>
+
+        <label for="time">Workout Time:</label>
+        <input
+            type="time"
+            id="time"
+            name="time"
+            min="06:00"
+            max="22:00"
+            required
+        >
+        <br><br>
+
+        <label for="fitness">Fitness Level:</label>
+        <input
+            type="range"
+            id="fitness"
+            name="fitness"
+            min="1"
+            max="10"
+        >
+        <br><br>
+
+        <label for="message">Fitness Goals:</label>
+        <br>
+        <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="30"
+            maxlength="300"
+        ></textarea>
+        <br><br>
+
+        <label for="plan">Membership Plan:</label>
+
+        <select id="plan" name="plan" required>
+            <option value="" disabled selected>
+                Select a Plan
+            </option>
+            <option value="basic">Basic</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <br><br>
+
+        <label for="photo">Upload Photo:</label>
+        <input
+            type="file"
+            id="photo"
+            name="photo"
+            accept="image/*"
+        >
+        <br><br>
+
+        <p>Gender:</p>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            required
+        >
+        <label for="male">Male</label>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+        >
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <p>Favorite Exercise:</p>
+
+        <input
+            type="checkbox"
+            id="weights"
+            name="exercise"
+            value="weights"
+            checked
+        >
+        <label for="weights">Weight Training</label>
+
+        <input
+            type="checkbox"
+            id="cardio"
+            name="exercise"
+            value="cardio"
+        >
+        <label for="cardio">Cardio</label>
+
+        <br><br>
+
+        <label for="member">Membership Number:</label>
+        <input
+            type="text"
+            id="member"
+            name="member"
+            value="FZ1001"
+            readonly
+        >
+
+        <br><br>
+
+        <label for="staff">Staff Use Only:</label>
+        <input
+            type="text"
+            id="staff"
+            name="staff"
+            value="Admin Only"
+            disabled
+        >
+
+        <br><br>
+
+        <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            value="yes"
+            required
+        >
+        <label for="terms">I agree to the gym rules.</label>
+
+        <br><br>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <hr>
+
+    <p>Copyright 2026 FitZone Gym</p>
+
+</body>
+</html>
